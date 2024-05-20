@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="png" href="images/logo.jpeg" />
+    <style>
+      link[rel="icon"] {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sriabhinay Kusuma</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a401cce23.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="navbar">
+          <img src="images/logo.jpeg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Sriabhinay</span><br />Kusuma</h1>
+        </div>
+      </div>
+    </div>
+    <!------------about----------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.JPG" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Sriabhinay Kusuma, a Computer Science student at University of Alabama in Huntsville. 
+              As a recent Master’s graduate with a perfect <b>4.0 GPA </b>
+              in Computer Science, I bring both theoretical knowledge and practical experience to the table. 
+
+              During my Master’s, I served as a Graduate Teaching Assistant, where I managed lab setups and supported 
+              course curriculum. My internship at Garuna.tech allowed me to 
+              develop hands-on skills in React, HTML5, and Tailwind CSS, where I focused on crafting dynamic, responsive
+              web applications and Java for backend logics. 
+              My technical expertise is broad, encompassing
+              front-end technologies like JavaScript, React, and Next.js, as well as backend and database management
+              with Java, Node.js. 
+              I am eager to leverage my diverse skill set and passion for software 
+              development to contribute to innovative projects and collaborative teams.
+
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul class="tab-columns">
+                <li><span>JavaScript/Node.js</span></li>
+                <li><span>React/Next.js</span></li>
+                <li><span>Java/SpringBoot</span></li>
+                <li><span>HTML/CSS</span></li>
+                <li><span>Docker</span></li>
+                <li><span>AWS</span></li>
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul class="tab-columns">
+                <li>
+                  <span>Jan 2023 – Dec 2023</span><br />Graduate Teaching Assistant
+                  @ University of Alabama in Huntsville<br/>
+                  <br/><p> CS454/554 Cloud Computing course <br/>
+                    <div>
+                      <p> Lab Setup and Support: Utilized Proxmox to create and manage virtual machines,
+                        providing a platform for student teams to experiment with cloud computing concepts.
+                      </p>
+                    </div>
+                    <br/> CS104 Python course <br/>
+                    <div>
+                      <p>
+                        Student Assistance and Grading: Conducted in-person lab hours, offering hands-on assistance to
+                        enhance student problem-solving skills in Python. Provided Grading and Support for the lab assignments for 40+students
+                      </p>
+                    </div>
+              
+                  </p>
+                </li>
+                <li>
+                  <span>Aug 2022 – Dec 2022</span><br />Student Specialist IV - Grader  @ University of Alabama in Huntsville<br/><br />
+                  <div>
+                    <p>
+                       CS317 Design and Analysis of Algorithms - Responsible for grading and in-person academic support for 60+ students.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span>May 2021 – June 2022 </span><br />Software Intern
+                  @ Garuna.tech<br />
+                  <br/>
+                  <div>
+                    <p>
+                      React, HTML5, and Tailwind CSS to craft dynamic, responsive web applications for local businesses. My role involved
+                      designing engaging user interfaces and implementing customized, visually appealing solutions that enhanced client operations.
+                    </p>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul class="tab-columns">
+                <li>
+                  <span>August 2022 - May 2024</span><br />University of Alabama in Huntsville<br/>Master’s in Computer Science - 4.0/4.0
+                </li>
+                <li>
+                  <span>August 2018 - May 2022</span><br />SR Engineering College, India <br/> Bachelor's Computer Science - 3.3/4.0
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certifications">
+              <ul class="tab-columns">
+                <li><span> AWS: Cloud Essentials <span>
+                  <a href="https://www.credly.com/badges/163bfdb0-7bec-4962-b80b-a855c87fbe53/linked_in?t=s9df0i" class="fa-solid fa-paper-plane"></a></span></span></li>
+                <li><span> Complete Javascript from Udemy <span>
+                  <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-46b311a7-0e8a-4615-bf9a-91a4d5df0540.pdf" class="fa-solid fa-paper-plane"></a></span></span></li>
+                <li><span>Complete Python from Udemy<span>
+                  <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-15bb4aff-05cd-4d75-b757-dd20f6953f34.pdf" class="fa-solid fa-paper-plane"></a></span></span></li>
+
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div><!-- ------------------portfolio---------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/v2.png" />
+            <div class="layer">
+              <h2>Sneakers Adda</h2>
+              <p>A dynamic web project leveraging NextJS framework and ReactJS as frontend library for real-time sneaker data</p>
+              <a href="http://sneakers-adda-v2.vercel.app" target="_blank" class="thisanchor"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mongo.webp" />
+            <div class="layer">
+              <h2>CRUD Op’s</h2>
+              <p>A full-stack web application, It demonstrates core CRUD operations with MongoDB, Server-side processing with Node.js</p>
+              <a href="https://github.com/sriabhinay556/CRUD_Ops_MERN" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/cnn.jpeg" />
+            <div class="layer">
+              <h2>Human Face Emotion Detection</h2>
+              <p>Developed a Convolutional Neural Networks model to classify the human’s emotion through real time face footage.</p>
+              <a href="https://github.com/sriabhinay556/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/hospital.jpeg" />
+            <div class="layer">
+              <h2>Hospital Administration</h2>
+              <p>Developed a standalone desktop-based app with Java.</p>
+              <a href="https://github.com/sriabhinay556/window-app-for-hospital-administration/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+<!-- ---------------contact-------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:sriabhinay1@gmail.com">sriabhinay1@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i>256-468-2929</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sriabhinay556/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/sriabhinay556" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="contact-right">
+        <img src="images/me.JPG" />
+        <a href="https://sriabhinay556.github.io/Resume/Abhi_Kusuma_Resume.pdf" target="_blank" class="btn btn2">Resume</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Sriabhinay Kusuma.</p>
+  </div>
+</div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+      const msg = document.getElementById("msg");
+    </script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var btn = document.querySelector(".btn");
+        var workList = document.querySelector(".work-list");
+
+        btn.addEventListener("click", function () {
+          workList.classList.toggle("expand");
+        });
+      });
+    </script>
+  </body>
+</html>
